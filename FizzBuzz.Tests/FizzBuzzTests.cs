@@ -1,14 +1,16 @@
-using System;
 using Xunit;
+using FizzBuzz.Library;
 
 namespace FizzBuzz.Tests
 {
-    public class UnitTest1
+   
+    public class FizzBuzzTests
     {
         [Fact]
-        public void Test1()
+        public void ShouldPrintNumber()
         {
-
+            FizzBuzzService fizzBuzz = new FizzBuzzService();
+            Assert.Equal("7", fizzBuzz.Print(7));
         }
     }
 }
