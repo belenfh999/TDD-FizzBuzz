@@ -34,5 +34,12 @@ namespace FizzBuzz.Tests
         public void ShouldPrintBuzz(int value){
             Assert.Equal("Buzz", _fizzBuzz.Print(value));
         }
+
+        [Theory]
+        [InlineData(15)]
+        [InlineData(30)]
+        public void ShouldPrintFizzBuzz(int value){
+            Assert.Equal("FizzBuzz", _fizzBuzz.Print(value));
+        }
     }
 }
