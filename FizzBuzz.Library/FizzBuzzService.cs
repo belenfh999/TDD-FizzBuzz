@@ -2,7 +2,11 @@
 
 namespace FizzBuzz.Library
 {
-    public class Class1
+    public class FizzBuzzService
     {
+        public String Print(int value) 
+        {
+            throw new NotImplementedException("Fizzbuzz print still not implemented!");
+        }
     }
 }
