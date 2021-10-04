@@ -1,6 +1,7 @@
 # TDD-FizzBuzz
 
-Implementation of the FizzBuzz Algorithm to learn TDD.
+Implementation of the FizzBuzz Algorithm to learn TDD using C#.
+Two testing frameworks will be used: MSTest & xUnit.
 
 ## The FizzBuzz Algorithm
 
