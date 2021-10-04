@@ -6,11 +6,7 @@ namespace FizzBuzz.Library
     {
         public String Print(int value) 
         {
-            if(value == 7)
-            {
-                return "7";
-            }
-            else if(value % 3 == 0)
+            if(value % 3 == 0)
             {
                 return "Fizz";
             }
@@ -20,7 +16,7 @@ namespace FizzBuzz.Library
             }
             else 
             {
-                return "8";
+                return $"{value}";
             }
         }
     }
