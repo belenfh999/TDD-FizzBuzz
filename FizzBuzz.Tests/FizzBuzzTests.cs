@@ -6,18 +6,19 @@ namespace FizzBuzz.Tests
    
     public class FizzBuzzTests
     {
-        [Fact]
-        public void ShouldPrintNumber()
+        private FizzBuzzService _fizzBuzz;
+
+        public FizzBuzzTests()
         {
-            FizzBuzzService fizzBuzz = new FizzBuzzService();
-            Assert.Equal("7", fizzBuzz.Print(7));
+            _fizzBuzz = new FizzBuzzService();
         }
 
-        [Fact]
-        public void ShouldPrintNumber2()
+        [Theory]
+        [InlineData(7)]
+        [InlineData(8)]
+        public void ShouldPrintNumber(int value)
         {
-            FizzBuzzService fizzBuzz = new FizzBuzzService();
-            Assert.Equal("8", fizzBuzz.Print(8));
+            Assert.Equal($"{value}", _fizzBuzz.Print(value));
         }
     }
 }
