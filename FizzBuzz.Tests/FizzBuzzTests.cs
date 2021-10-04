@@ -20,5 +20,10 @@ namespace FizzBuzz.Tests
         {
             Assert.Equal($"{value}", _fizzBuzz.Print(value));
         }
+
+        [Fact]
+        public void ShouldPrintFizz(){
+            Assert.Equal("Fizz", _fizzBuzz.Print(3));
+        }
     }
 }
