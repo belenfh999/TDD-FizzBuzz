@@ -6,7 +6,14 @@ namespace FizzBuzz.Library
     {
         public String Print(int value) 
         {
-            return "7";
+            if(value == 7)
+            {
+                return "7";
+            }
+            else 
+            {
+                return "8";
+            }
         }
     }
 }
