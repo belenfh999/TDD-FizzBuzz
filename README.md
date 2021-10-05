@@ -29,7 +29,7 @@ Two testing framework that will be used is xUnit.
 
 - Go to that newly created directory
 
-`cd unit-testing-using-dotnet-test`
+`cd TDD-FizzBuzz`
 
 - Create a new class lib:
 
