@@ -1,19 +1,27 @@
 # TDD-FizzBuzz
 
 Implementation of the FizzBuzz Algorithm to learn TDD using C#.
-Two testing frameworks will be used: MSTest & xUnit.
+Two testing framework that will be used is xUnit.
 
 ## The FizzBuzz Algorithm
 
 - **Input**
-  Positive number **N**
+
+  - Positive number **N**
+
 - **Output** (condition -> **output)**
   - N is divisible by 3 -> "Fizz"
   - N is divisible by 5 -> "Buzz"
   - N is divisible by 3 & 5 -> "FizzBuzz"
   - Otherwise -> N
 
-## Creating the project from scratch
+## Prerequisites
+
+| **Programming Language** | **Testing Framework** | **Code editor**    | **Runtime** |
+| ------------------------ | --------------------- | ------------------ | ----------- |
+| C#                       | xUnit                 | Visual Studio Code | .NET Core   |
+
+## Creating The Project From Scratch
 
 - Go to the directory where you want your project to be and run:
 
@@ -52,3 +60,27 @@ Two testing frameworks will be used: MSTest & xUnit.
 - Add the FizzBuzzService class library as a dependency to the FizzBuzz.Tests project:
 
 `dotnet add ./FizzBuzz.Tests/FizzBuzz.Tests.csproj reference ./FizzBuzz.Library/FizzBuzz.Library.csproj`
+
+## Running the tests
+
+- To run the tests, use the following command:
+
+`dotnet test`
+
+- Here's an example of what an execution will look like:
+
+```
+TDD-FizzBuzz git:(main) ✗ dotnet test
+  Determining projects to restore...
+  All projects are up-to-date for restore.
+  FizzBuzz.Library -> /Users/belen/Desktop/TDD The Big Picture/TDD-FizzBuzz/FizzBuzz.Library/bin/Debug/net5.0/FizzBuzz.Library.dll
+  FizzBuzz.Tests -> /Users/belen/Desktop/TDD The Big Picture/TDD-FizzBuzz/FizzBuzz.Tests/bin/Debug/net5.0/FizzBuzz.Tests.dll
+Test run for /Users/belen/Desktop/TDD The Big Picture/TDD-FizzBuzz/FizzBuzz.Tests/bin/Debug/net5.0/FizzBuzz.Tests.dll (.NETCoreApp,Version=v5.0)
+Microsoft (R) Test Execution Command Line Tool Version 16.11.0
+Copyright (c) Microsoft Corporation.  All rights reserved.
+
+Starting test execution, please wait...
+A total of 1 test files matched the specified pattern.
+
+Passed!  - Failed:     0, Passed:    17, Skipped:     0, Total:    17, Duration: 38 ms - /Users/belen/Desktop/TDD The Big Picture/TDD-FizzBuzz/FizzBuzz.Tests/bin/Debug/net5.0/FizzBuzz.Tests.dll (net5.0)
+```
